@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/bg"
+
+    >
+
+    <ImageView
+        android:id="@+id/imLogo"
+        android:layout_width="217dp"
+        android:layout_height="207dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="95dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="95dp"
+        app:srcCompat="@drawable/logo" />
+
+    <EditText
+        android:id="@+id/tUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imLogo"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="58dp"
+        android:layout_marginEnd="35dp"
+        android:background="#fff"
+        android:ems="10"
+        android:hint="Username"
+        android:drawableLeft="@drawable/user"
+        android:inputType="text"
+        android:padding="10dp"
+        android:text="" />
+
+    <EditText
+        android:id="@+id/tPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tUsername"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="35dp"
+        android:background="#fff"
+        android:drawableLeft="@drawable/password"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType=""
+        android:padding="10dp" />
+
+    <Button
+        android:id="@+id/btLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tPassword"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="76dp"
+        android:text="Login" />
+
+    <TextView
+        android:id="@+id/tForgotPassword"
+        android:layout_width="136dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/tPassword"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="190dp"
+        android:padding="5dp"
+        android:text="Forgot Password"
+        android:gravity="right"
+        />
+
+    <TextView
+        android:id="@+id/tSignUp"
+        android:layout_width="126dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/tPassword"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="239dp"
+        android:layout_marginBottom="191dp"
+        android:padding="5dp"
+        android:text="Sign Up" />
+
+
+</RelativeLayout>
